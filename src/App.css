@@ -1,0 +1,207 @@
+.App {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .App {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .App {
+    width: 60vw;
+  }
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.25rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+.rules button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Text Editor */
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: 'Tell your story...';
+  float: left;
+  color: var(--gray-300);
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror {
+  padding: 1rem;
+  min-height: 70vh;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  max-height: 30rem;
+}
+
+.ProseMirror img.ProseMirror-selectednode {
+  outline: 3px solid var(--aqua);
+}
+
+.editor {
+  border: 1px solid var(--gray-border);
+  border-radius: 5px;
+  width: 95%;
+  margin: 1rem auto;
+}
+
+/* Text Editor Buttons */
+
+.editor-buttons {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--gray-100);
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  font-size: 1.125rem;
+  border-radius: 5px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  margin: 0.5rem 0.5rem;
+  display: inline-grid;
+  place-items: center;
+}
+
+.btn:hover {
+  background-color: var(--gray-200);
+}
+
+.btn-active {
+  background-color: var(--gray-200);
+}
+
+/* Add Links Modal */
+
+.modal-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-background);
+  z-index: 1;
+}
+
+.modal {
+  border-radius: 5px;
+  padding: 1rem;
+  z-index: 2;
+  background-color: var(--white);
+  max-width: 95vw;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    max-width: 80vw;
+    max-height: 90vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .modal {
+    max-width: 60vw;
+    max-height: 95vh;
+  }
+}
+
+.modal-header {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-header h1 {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .modal-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.modal-header .close-btn {
+  cursor: pointer;
+  height: max-content;
+}
+
+.modal .modal-content input {
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal .modal-content input {
+    margin-bottom: 1rem;
+  }
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-actions button {
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-grid;
+  place-items: center;
+}
+
+.modal-actions button.add {
+  background-color: var(--gray-300);
+}
+
+.modal-content ul {
+  list-style-type: none;
+}
+
+.modal-content ul li {
+  margin: 1rem 0;
+}
