@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# EditOR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EditOR is a rich text editor with functionalities like formatting text, adding hyperlinks, images, and memes.
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+- ReactJS
+- Tiptap Editor
+- Vanilla CSS
+- Tenor API
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Usage
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. To add **bold** style, click on the `B` button and start typing.
 
-### `npm test`
+   If you want to add or remove bold style to an existing text, then select the text and click on the `B` button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. To add **italic** style, click on the `I` button and start typing.
 
-### `npm run build`
+   If you want to add or remove italic style to an existing text, then select the text and click on the `I` button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. To add **underline** style, click on the <u>`U`</u> button and start typing.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   If you want to add or remove underline style to an existing text, then select the text and click on the <u>`U`</u> button.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. To add a **hyperlink** to your text, select the text, click on the `🔗` button, enter URL in opened modal.
 
-### `npm run eject`
+   If you want to remove the hyperlink, select the text and click on the ~~`🔗`~~ button.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   > **NOTE:** Please make sure that you enter the full URL e.g. `https://www.google.com`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. To add an **image**, click on the `Image` icon and enter image URL in opened modal.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   If you want to delete an image, then click on the image and press `delete` or `backspace` button.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   If you want to **reorder** the sequence of your images, just drag and drop.
 
-## Learn More
+   > **NOTE:** You can use this image URL for testing- `https://source.unsplash.com/random/800x600`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+6. To add a meme, write "**{{nameOfMeme_meme}}**", then click on the `Add Meme` button.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   If you want to delete a meme, then click on the meme and press `delete` or `backspace` button.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   > **NOTE:** For testing purpose, you can use `{{cat_meme}}` to generate a meme

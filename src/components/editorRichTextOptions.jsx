@@ -1,5 +1,6 @@
 import { AddImages } from './addImages';
 import { AddLinks } from './addLinks';
+import { AddMemes } from './addMemes';
 import { AddTextStyles } from './addTextStyles';
 
 export const EditorRichTextOptions = ({ editor }) => {
@@ -12,6 +13,7 @@ export const EditorRichTextOptions = ({ editor }) => {
       <AddTextStyles editor={editor} />
       <AddLinks editor={editor} />
       <AddImages editor={editor} />
+      <AddMemes editor={editor} />
     </div>
   );
 };

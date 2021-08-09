@@ -33,9 +33,14 @@
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-size: 1rem;
+  border: none;
   background-color: var(--primary-color);
   color: var(--white);
   cursor: pointer;
+}
+
+.rules button:hover {
+  background-color: var(--primary-color-light);
 }
 
 /* Text Editor */
@@ -77,6 +82,9 @@
 /* Text Editor Buttons */
 
 .editor-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-color: var(--gray-100);
@@ -95,12 +103,33 @@
   place-items: center;
 }
 
+.btn-inactive {
+  opacity: 0.5;
+}
+
 .btn:hover {
+  opacity: 1;
   background-color: var(--gray-200);
 }
 
 .btn-active {
-  background-color: var(--gray-200);
+  background-color: var(--gray-300);
+}
+
+.btn-text {
+  font-size: 0.75rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-text {
+    font-size: 0.9rem;
+  }
+}
+
+.btn-text:hover {
+  background-color: var(--primary-color-light);
 }
 
 /* Add Links Modal */
@@ -195,7 +224,12 @@
 }
 
 .modal-actions button.add {
-  background-color: var(--gray-300);
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.modal-actions button.add:hover {
+  background-color: var(--primary-color-light);
 }
 
 .modal-content ul {
