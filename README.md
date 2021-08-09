@@ -11,6 +11,11 @@ EditOR is a rich text editor with functionalities like formatting text, adding h
 
 ## Live Demo
 
+
+https://user-images.githubusercontent.com/26481473/128714903-d2b59e05-a698-4fa8-9d7b-b34623e4aa10.mp4
+
+
+
 ## Usage
 
 1. To add **bold** style, click on the `B` button and start typing.
