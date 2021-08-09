@@ -89,6 +89,9 @@
   border-top-right-radius: 5px;
   background-color: var(--gray-100);
   margin-bottom: 0.5rem;
+  position: sticky;
+  z-index: 2;
+  top: 0;
 }
 
 .btn {
